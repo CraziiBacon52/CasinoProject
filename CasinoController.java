@@ -1,6 +1,9 @@
 import java.awt.*;
 
-public class CasinoController implements KeyListener{
+//This will be running most of the time, manages the inbetween phases of games
+
+public class CasinoController{
+  /*these are different modes so we can keep track of who is playing when, also keeps track of modes*/
   public static final int LOBBY = 0;
   public static final int INGAME = 1;
   private Player p; 
@@ -11,14 +14,13 @@ public class CasinoController implements KeyListener{
     mode = LOBBY;
   }
 
-  //Getter
+  //Getters
   public int getMode()
   {
     return mode;
   }
 
-  //Setter
-
+  //Setters
   public void setMode(int newMode)
   {
     mode = newMode;

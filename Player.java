@@ -3,7 +3,9 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Rectangle;
 
-public class Player{
+//Player object, has the player's instance vars like their balance and screen position
+public class Player
+{
 	private int x; 
 	private int y; 
 	private int balance;
@@ -28,9 +30,13 @@ public class Player{
   public int getY(){
     return y; 
   }
+
+  public String getName()
+  {
+    return name;
+  }
   
   //Setters
-
   public void adjustBalance(int add)
   {
     balance += add;
@@ -39,5 +45,25 @@ public class Player{
   public void setBalance(int newBalance)
   {
     balance = newBalance;
+  }
+
+  public void setX(int newX)
+  {
+    x = newX;
+  }
+
+  public void adjustX(int add)
+  {
+    x += add;
+  }
+
+  public void setY(int newY)
+  {
+    y = newY;
+  }
+
+  public void adjustY (int add)
+  {
+    y += add;
   }
 }
