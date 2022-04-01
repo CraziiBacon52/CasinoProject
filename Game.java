@@ -7,12 +7,16 @@ public class Game
   private Graphics g; 
   private String instructions; 
   private String name; 
+  private Player p;
+  private CasinoController c;
   
-  public Game(Graphics g, String instructions, String   gameName)
+  public Game(Graphics g, String instructions, String   gameName, Player p, CasinoController c)
   {
     this.g = g; 
     this.instructions = instructions;
     this.name = gameName;  
+    this.p = p;
+    this.c = c;
   }
 
   public Graphics getGraphics(){
@@ -28,4 +32,14 @@ public class Game
   {
     return instructions;
   } 
+
+  public Player getPlayer()
+  {
+    return p;
+  }
+
+  public CasinoController getCasinoController()
+  {
+    return c;
+  }
 }

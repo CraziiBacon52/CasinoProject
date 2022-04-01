@@ -9,9 +9,7 @@ public class Application
     //creates all objects, player, etc., DON'T TOUCH
     Player p = new Player(); 
     CasinoController c = new CasinoController(p); 
-    Painter g = new Painter(p); 
+    Painter g = new Painter(p, c); 
     g.repaint(); 
   }
-
-  
 }

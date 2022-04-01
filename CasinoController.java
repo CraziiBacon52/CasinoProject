@@ -4,8 +4,12 @@ import java.awt.*;
 
 public class CasinoController{
   /*these are different modes so we can keep track of who is playing when, also keeps track of modes*/
-  public static final int LOBBY = 0;
-  public static final int INGAME = 1;
+  public final int LOBBY = 0;
+  public final int ROULETTE = 1;
+  public final int SLOTS = 2; 
+  public final int SOLITAIRE = 3; 
+  public final int BLACKJACK = 4;
+
   private Player p; 
   public static int mode; 
   
