@@ -21,7 +21,7 @@ public class Painter extends JFrame {
     this.p = p;
   }
 
-  public void setContoller(CasinoController c) {
+  public void setController(CasinoController c) {
 		this.c = c; 
 	}
 
