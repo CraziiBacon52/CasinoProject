@@ -11,7 +11,7 @@ public class CasinoController{
   public final int BLACKJACK = 4;
 
   private Player p; 
-  public static int mode; 
+  public int mode; 
   
   public CasinoController(Player p){
     this.p = p;
