@@ -10,7 +10,7 @@ public class Application
     Player p = new Player(); 
     CasinoController c = new CasinoController(p); 
     Painter g = new Painter(p); 
-    p.setController(c); 
+    g.setController(c); 
     g.repaint(); 
   }
 }
